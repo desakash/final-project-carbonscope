@@ -301,19 +301,19 @@ const AnalysisPage = ({ project }) => {
                 <Card>
                     <CardBody>
                         <Heading mb={2} size='md'>Reduced Energy Consumption</Heading>
-                        <Text>{project.suggestion_energy.total || ' '} unit</Text>
+                        <Text>{project.suggestion_energy?.total || ' '} unit</Text>
                     </CardBody>
                 </Card>
                 <Card>
                     <CardBody>
                         <Heading mb={2} size='md'>Reduced Execution Time</Heading>
-                        <Text>{project.suggestion_time.total || ' '} unit</Text>
+                        <Text>{project.suggestion_time?.total || ' '} unit</Text>
                     </CardBody>
                 </Card>
                 <Card>
                     <CardBody>
                         <Heading mb={2} size='md'>Reduced Memory Usage</Heading>
-                        <Text>{project.suggestion_memory.total || ' '} unit</Text>
+                        <Text>{project.suggestion_memory?.total || ' '} unit</Text>
                     </CardBody>
                 </Card>
             </SimpleGrid>

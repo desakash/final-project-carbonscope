@@ -24,7 +24,7 @@ const ProjectShell = ({ children }) => {
                     px={8}
                 >
                     <Flex>
-                        <Link mr={4}>Green IT</Link>
+                        <Link mr={4}>CarbonScope</Link>
                     </Flex>
                     <Flex justifyContent="center" alignItems="center">
                         {user && <Button variant="ghost" mr={2} onClick={() => signout()}>

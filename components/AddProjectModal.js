@@ -78,7 +78,7 @@ const AddProjectModal = ({ children }) => {
 
         openai.createCompletion({
             model: "gpt-3.5-turbo-instruct",
-            prompt: `AI/ML, Blockchain, Web Development, App Development, Command Line App. From these given options choose what suits best for the below description.I want the answer in only one word and it should be from given options on ${desc}`,
+            prompt: `AI/ML, Blockchain, Web Development, App Development, Command Line App. From these given options choose what suits best for the below description of project.I want the answer in only one word and it should be from given options only. Options are : AI/ML, Blockchain, Web Development, App Development, Command Line App :  ${desc}`,
             max_tokens: 256,
         }).then((data) => {
             console.log(data.data.choices[ 0 ].text + "Hello")

@@ -14,10 +14,10 @@ export default function Home() {
   return (
     <Flex as="main" direction='column' align='center' justify='center' h='100vh' gap={4}>
       <Head>
-        <title>Green IT</title>
+        <title>CarbonScope</title>
       </Head>
       <Heading>
-        Green IT
+        CabonScope
       </Heading>
 
       <Text>

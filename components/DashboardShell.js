@@ -12,6 +12,7 @@ import {
 } from '@chakra-ui/react';
 import { useAuth } from '@/lib/auth';
 import AddProjectModal from './AddProjectModal';
+import NextLink from 'next/link';
 
 const DashboardShell = ({ children }) => {
     const { user, signout } = useAuth();
@@ -30,7 +31,9 @@ const DashboardShell = ({ children }) => {
                     px={8}
                 >
                     <Flex>
-                        <Link mr={4}>Green IT</Link>
+                    <NextLink href="/dashboard" passHref>
+                        <Link mr={4}>CarbonScope</Link>
+                        </NextLink>
                     </Flex>
                     <Flex justifyContent="center" alignItems="center">
                         {user && <Button variant="ghost" mr={2} onClick={() => signout()}>
